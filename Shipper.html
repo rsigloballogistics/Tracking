@@ -1,13 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RSI Shipper Portal</title>
     <style>
-        body, html { margin: 0; padding: 0; height: 100%; overflow: hidden; }
+        /* This removes all default spacing and forces the page to be exactly the size of the screen */
+        body, html { 
+            margin: 0; 
+            padding: 0; 
+            height: 100%; 
+            width: 100%; 
+            overflow: hidden; 
+            background-color: #ffffff; 
+        }
+        
+        /* This forces the iframe to be autoadjustable to any screen size */
+        iframe { 
+            width: 100vw; 
+            height: 100vh; 
+            border: none; 
+            display: block; 
+        }
     </style>
 </head>
 <body>
-    <iframe width="100%" height="100vh" src="https://datastudio.google.com/embed/reporting/a1783dc5-5092-462c-a93a-0db322d22a94/page/p_xsch8c992d" frameborder="0" style="border:0; min-height: 100vh;" allowfullscreen sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"></iframe>
+
+    <iframe 
+        src="https://datastudio.google.com/embed/reporting/4893c230-353d-4d06-bdfc-f54c1ccddfe2/page/p_xsch8c992d" 
+        allowfullscreen 
+        sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox">
+    </iframe>
+
 </body>
 </html>
