@@ -3,26 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RSI Global Logistics - Consignee Tracking</title>
+    <title>RSI Global Logistics - Tracking Portal</title>
     <style>
-        /* Ensures the tracking portal fills the entire screen on all devices */
+        /* Removes all margins and padding so the iframe fills the window */
         body, html {
             margin: 0;
             padding: 0;
             height: 100%;
             width: 100%;
-            overflow: hidden; 
+            overflow: hidden; /* Prevents double scrollbars */
         }
         iframe {
             width: 100%;
-            height: 100vh;
+            height: 100vh; /* Fills 100% of the viewport height */
             border: none;
         }
     </style>
 </head>
 <body>
 
-    <!-- This URL is locked to the 1st Page (Consignee View) -->
     <iframe 
         src="https://datastudio.google.com/embed/reporting/a1783dc5-5092-462c-a93a-0db322d22a94/page/SlpvF" 
         allowfullscreen 
