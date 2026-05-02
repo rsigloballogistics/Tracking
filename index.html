@@ -3,18 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RSI Global Logistics - Tracking Portal</title>
+    <title>RSI Tracking Portal</title>
     <style>
-        /* Removes all margins and ensures the container is the full size of the screen */
+        /* This section ensures the tracking portal fills the entire browser window */
         body, html { 
             margin: 0; 
             padding: 0; 
             height: 100%; 
             width: 100%; 
             overflow: hidden; 
-            background-color: #ffffff; 
+            background-color: white; 
         }
-        /* The iframe will automatically fill 100% of the browser window */
+        
+        /* Using vw (width) and vh (height) makes the report autoadjustable */
         iframe { 
             width: 100vw; 
             height: 100vh; 
@@ -26,7 +27,7 @@
 <body>
 
     <iframe 
-        src="PASTE_YOUR_NEW_CONSIGNEE_REPORT_URL_HERE" 
+        src="https://datastudio.google.com/embed/reporting/a1783dc5-5092-462c-a93a-0db322d22a94/page/SlpvF" 
         allowfullscreen 
         sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox">
     </iframe>
