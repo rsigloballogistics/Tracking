@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RSI Tracking Portal</title>
+    <style>
+        /* This section ensures the tracking portal fills the entire browser window */
+        body, html { 
+            margin: 0; 
+            padding: 0; 
+            height: 100%; 
+            width: 100%; 
+            overflow: hidden; 
+            background-color: white; 
+        }
+        
+        /* Using vw (width) and vh (height) makes the report autoadjustable */
+        iframe { 
+            width: 100vw; 
+            height: 100vh; 
+            border: none; 
+            display: block; 
+        }
+    </style>
+</head>
+<body>
+
+    <iframe 
+        src="https://datastudio.google.com/embed/reporting/a1783dc5-5092-462c-a93a-0db322d22a94/page/SlpvF" 
+        allowfullscreen 
+        sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox">
+    </iframe>
+
+</body>
+</html>
