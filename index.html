@@ -3,31 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RSI Tracking Portal</title>
+    <title>RSI Global Logistics - Tracking Portal</title>
     <style>
-        body, html { margin: 0; padding: 0; height: 100%; width: 100%; overflow: hidden; background-color: white; }
-        .container { position: relative; width: 100%; height: 100vh; }
-        iframe { width: 100%; height: 100%; border: none; display: block; }
-        /* This blocks the hover trigger at the bottom */
-        .blocker {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            height: 40px; /* Adjust height if the bar still shows */
-            background: transparent;
-            z-index: 10;
+        /* Removes all margins and ensures the container is the full size of the screen */
+        body, html { 
+            margin: 0; 
+            padding: 0; 
+            height: 100%; 
+            width: 100%; 
+            overflow: hidden; 
+            background-color: #ffffff; 
+        }
+        /* The iframe will automatically fill 100% of the browser window */
+        iframe { 
+            width: 100vw; 
+            height: 100vh; 
+            border: none; 
+            display: block; 
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <iframe 
-            src="https://lookerstudio.google.com/embed/u/0/reporting/a1783dc5-5092-462c-a93a-0db322d22a94/page/SlpvF?&navhide=true" 
-            allowfullscreen 
-            sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox">
-        </iframe>
-        <div class="blocker"></div>
-    </div>
+
+    <iframe 
+        src="PASTE_YOUR_NEW_CONSIGNEE_REPORT_URL_HERE" 
+        allowfullscreen 
+        sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox">
+    </iframe>
+
 </body>
 </html>
