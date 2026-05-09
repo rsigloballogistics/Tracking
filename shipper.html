@@ -4,13 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- Tab Name -->
     <title>RSI Shipper Portal</title>
 
-    <!-- Updated Tab Icon for PNG -->
-    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="icon" type="image/png" href="favicon.png?v=2">
 
     <style>
+        /* This section makes the report fill the entire screen */
         body, html { 
             margin: 0; 
             padding: 0; 
@@ -20,6 +19,7 @@
             background-color: white; 
         }
         
+        /* The iframe is the window to your Looker Studio report */
         iframe { 
             width: 100vw; 
             height: 100vh; 
@@ -33,7 +33,7 @@
     <iframe 
         src="https://datastudio.google.com/embed/reporting/4893c230-353d-4d06-bdfc-f54c1ccddfe2/page/p_xsch8c992d" 
         allowfullscreen 
-        sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox">
+        sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox allow-downloads">
     </iframe>
 
 </body>
